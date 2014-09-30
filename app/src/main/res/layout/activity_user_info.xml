@@ -28,9 +28,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/patient"
-                android:id="@+id/patientName"/>
+                android:text="@string/patient"/>
             <EditText
+                android:id="@+id/patientName"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -40,9 +40,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/AssessorName"
-                android:id="@+id/assessorName"/>
+                android:text="@string/AssessorName" />
             <EditText
+                android:id="@+id/assessorName"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -52,10 +52,10 @@
             android:gravity="center"
             android:paddingTop="15dp">
             <Button
+                android:id="@+id/submitUserInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/SubmitButton"
-                android:onClick="UserSubmit"/>
+                android:text="@string/SubmitButton" />
 
             </LinearLayout>
     </LinearLayout>

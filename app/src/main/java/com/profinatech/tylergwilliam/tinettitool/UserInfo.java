@@ -6,15 +6,19 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
 
 
-public class UserInfo extends Activity {
+public class UserInfo extends Activity implements OnClickListener {
     public final static String PATIENT_NAME = "com.profinatech.tylergwilliam.tinettitool.PATIENT_NAME";
     public final static String ASSESSOR_NAME = "com.profinatech.tylergwilliam.tinettitool.ASSESSSOR_NAME";
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_info);
+
+        ((Button)findViewById(R.id.submitUserInfo)).setOnClickListener(this);
     }
 
 
@@ -36,14 +40,18 @@ public class UserInfo extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
-    public void userSubmit(View view) {
-        Intent intent = new Intent (this, BalanceSectionActivity.class);
-        EditText editText1 = (EditText) findViewById(R.id.patientName);
-        String patientName = editText1.getText().toString();
-        EditText editText2 = (EditText)findViewById(R.id.assessorName);
-        String assessorName = editText2.getText().toString();
-        intent.putExtra(PATIENT_NAME, patientName);
-        intent.putExtra(ASSESSOR_NAME,assessorName);
-        startActivity(intent);
+
+    @Override
+    public void onClick(View v) {
+        if(v.getId() == R.id.submitUserInfo) {
+            Intent intent = new Intent (this, BalanceSectionActivity.class);
+            EditText editText1 = (EditText) findViewById(R.id.patientName);
+            String patientName = editText1.getText().toString();
+            EditText editText2 = (EditText)findViewById(R.id.assessorName);
+            String assessorName = editText2.getText().toString();
+            intent.putExtra(PATIENT_NAME, patientName);
+            intent.putExtra(ASSESSOR_NAME,assessorName);
+            startActivity(intent);
+        }
     }
 }
