@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="patient">Patient Name</string>
+    <string name="AssessorName">Assessor Name</string>
+    <string name="action_settings">Settings</string>
+    <string name="SubmitButton">Submit</string>
+    <string name="app_name">Tinetti Balance Tool</string>
+    <string name="title_activity_balance_section">BalanceSectionActivity</string>
+    <string name="balanceSection">Balance Section</string>
+    <string name="q1">Sitting Balance</string>
+    <string name="q1.1">Leans or slides in chair</string>
+    <string name="q1.2">Steady, safe</string>
+    <string name="q2">Rises from chair</string>
+    <string name="q2.1">Unable to without help</string>
+    <string name="q2.2">Able, uses arms to help</string>
+    <string name="q2.3">Able without use of arms</string>
+    <string name="q3">Attempts to rise</string>
+    <string name="q3.1">Unable to without help</string>
+    <string name="q3.2">Able, requires +1 attempt</string>
+    <string name="q3.3">Able to rise, 1 attempt</string>
+    <string name="q4">Immediate Standing Balance (1st 5 sec)</string>
+    <string name="q4.1">Unsteady (staggers, moves feet, trunk sway</string>
+    <string name="q4.2">Steady but uses walker or other support</string>
+    <string name="q4.3">Steady without walker or other support</string>
+    <string name="q5">Standing Balance (1st 5 sec)</string>
+    <string name="q5.1">Unsteady</string>
+    <string name="q5.2">Steady but wide stance and uses support</string>
+    <string name="q5.3">Narrow stance without support</string>
+    <string name="q6">Nudged</string>
+    <string name="q6.1">Begins to fall</string>
+    <string name="q6.2">Staggers, grabs, catches self</string>
+    <string name="q6.3">Steady</string>
+    <string name="q7">Eyes Closed</string>
+    <string name="q7.1">Unsteady</string>
+    <string name="q7.2">Steady</string>
+    <string name="q8">Turning 360 degrees</string>
+    <string name="q8.1">Discontinuous steps</string>
+    <string name="q8.2">Continuous</string>
+    <string name="q9.1">Unsteady (grabs, staggers)</string>
+    <string name="q9.2">Steady</string>
+    <string name="q10">Sitting down</string>
+    <string name="q10.1">Unsafe (misjudged distance, falls into chair)</string>
+    <string name="q10.2">Uses arms or not a smooth motion</string>
+    <string name="q10.3">Safe, smooth motion</string>
+
+</resources>
